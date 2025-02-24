@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Park Ave - NYC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Albertus+Nova+Thin&family=Area+Variable+Inktrap&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <h1>HOTEL</h1>
+        <h1>PARK AVE</h1>
+        <h1>NYC</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#dining">Dining</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2>Stay Bold!</h2>
+        <p>Welcome to a new Park Avenue. Welcome to Hotel Park Ave.</p>
+        <a href="#rooms" class="cta-button">Explore Rooms</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Hotel Park Ave is a curated space where you can be yourself and
+          embrace the bold. Located in the heart of Midtown Manhattan, we offer
+          a unique blend of style and substance.
+        </p>
+      </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms">
+      <div class="container">
+        <h2>Rooms & Suites</h2>
+        <p>
+          Our guest rooms and suites are designed to be your retreat from the
+          vibrant energy of New York City. Enjoy comfortable, calming spaces
+          with modern amenities and stunning city views.
+        </p>
+        <div class="room-grid">
+          <div class="room-card">
+            <img src="img1.webp" alt="Standard Room" />
+            <h3>Standard Room</h3>
+            <p>
+              Comfortable and calming, perfect for solo travelers or couples.
+            </p>
+          </div>
+          <div class="room-card">
+            <img src="img3.webp" alt="Deluxe Suite" />
+            <h3>Deluxe Suite</h3>
+            <p>Spacious suites with separate living areas and city views.</p>
+          </div>
+          <div class="room-card">
+            <img src="img2.webp" alt="Nomad Penthouse" />
+            <h3>Nomad Penthouse</h3>
+            <p>Our largest suite, perfect for entertaining and luxury stays.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining">
+      <div class="container">
+        <h2>Dining</h2>
+        <p>
+          Experience exceptional dining options at Hotel Park Ave. From our
+          rooftop terrace to our soon-to-launch restaurant, we offer a variety
+          of culinary experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+      <div class="container">
+        <h2>Events</h2>
+        <p>
+          Host your next event at Hotel Park Ave. Our flexible meeting and event
+          spaces are perfect for everything from intimate dinners to large
+          gatherings.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>444 Park Avenue South, New York, NY 10016</p>
+        <p>Phone: 212.904.5880</p>
+        <p>Email: hello@hotelparkave.com</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 Hotel Park Ave. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const nav = document.querySelector("nav ul");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
